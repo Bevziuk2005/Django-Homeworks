@@ -1,0 +1,19 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'notes/shablon.css' %}">
+</head>
+<body>
+    <div class="d-1">
+        {% for i in notes %}
+            <h2>{{ i.title }}</h2>
+            <p>{{ i.text }}
+            <p> {{ i.reminder }}
+            <p> {{ i.category.title }}
+        {% endfor %}
+    </div>
+</body>
+</html>
