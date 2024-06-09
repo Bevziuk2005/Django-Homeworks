@@ -1,0 +1,17 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main title</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'notes/shablon.css' %}">
+</head>
+<body>
+    It's Title.
+    <div class="d-1">
+        {% for i in text %}
+            {{i}}
+        {% endfor %}
+    </div>
+</body>
+</html>
